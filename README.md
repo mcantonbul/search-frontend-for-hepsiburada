@@ -1,3 +1,11 @@
+# HepsiBurada Search Sayfa Klonu
+
+Projeyi başlatmak için `npm run start`
+
+Testleri çalıştırmak için `npm run test`
+
+Docker için `docker-compose -f docker-compose.yml up` komutlarını kullanabilirsiniz.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
