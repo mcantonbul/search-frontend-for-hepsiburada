@@ -6,6 +6,8 @@ Testleri çalıştırmak için `npm run test`
 
 Docker için `docker-compose -f docker-compose.yml up` komutlarını kullanabilirsiniz.
 
+Proje varsayılan olarak `localhost:8080` adresindeki [SearchAPI](https://github.com/mcantonbul/search-api) servisini tüketir.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
