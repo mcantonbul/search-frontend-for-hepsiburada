@@ -1,5 +1,10 @@
 # HepsiBurada Search Sayfa Klonu
 
+Canlı Demo: https://61cc7c792bc6cbf5bb4e48d7--hepsiburadasearch.netlify.app/
+API: https://fierce-citadel-22205.herokuapp.com/products
+
+**Not:** API projesi heroku adresinde olduğundan ilk açılışta 30sn ayağa kalkma süresi olabiliyor.
+
 Projeyi başlatmak için `npm run start`
 
 Testleri çalıştırmak için `npm run test`
@@ -9,6 +14,8 @@ Docker için `docker-compose -f docker-compose.yml up` komutlarını kullanabili
 `localhost:3000` adresinde proje ayağa kalkmış olacaktır.
 
 Proje varsayılan olarak `localhost:8080` adresindeki [SearchAPI](https://github.com/mcantonbul/search-api) servisini tüketir.
+
+DEMO
 
 # Getting Started with Create React App
 
