@@ -4,9 +4,7 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.0.3",
     "@types/node": "^16.11.17",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
@@ -20,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "docker-compose -f docker-compose.dev.yml up"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +38,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/react": "^12.1.2",
+    "@types/enzyme": "^3.10.10",
+    "@types/jest": "^27.0.3",
+    "sass": "^1.45.1"
   }
 }

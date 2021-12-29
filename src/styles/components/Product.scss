@@ -1,0 +1,111 @@
+.product {
+    cursor: pointer;
+    position: relative;
+    .product-image {
+        outline: 1px solid #E5E5E5;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    > *:not(.product-image) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    > h3 {
+        font-family: Roboto;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 10px 0px;
+        height: 32px;
+    }
+    .sub-infos {
+        height: $product-bottom-area-height;
+        .brand-color-info {
+            margin-bottom: 10px;
+            p {
+                font-family: Roboto;
+                font-size: 12px;
+                line-height: 18px;
+                b {
+                    font-weight: bold;
+                }
+                span {
+                    margin-left: 5px;
+                }
+            }
+        }
+        .price-info {
+            .price {
+                font-family: Roboto;
+                font-weight: bold;
+                font-size: 14px;
+            }
+    
+            .discount-info {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                .original-price {
+                    font-family: Roboto;
+                    font-size: 13px;
+                    line-height: 18px;
+                    color: #9B9B9B;
+                    text-decoration: line-through;
+                }
+        
+                .discount-rate {
+                    color: #F90000;
+                    font-family: Roboto;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+
+    .actions {
+        height: $product-bottom-area-height;
+        display: none;
+        position: absolute;
+        align-items: flex-end;
+        bottom: 10px;
+        width: calc(100% - 20px);
+        button {
+            height: 32px;
+            background: rgba(255, 96, 0, 0.11);
+            border-radius: 8px;
+            width: 100%;
+            color: $hepsiburada-main-color;
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            border: 0px;
+            cursor: pointer;
+            &:hover {
+                background: rgba(212, 110, 47, 0.11);
+            }
+            &.disabled {
+                color: #B0B0B0;
+                background: rgba(126, 126, 126, 0.11);
+            }
+        }
+    }
+
+    &:hover {
+        outline: 1px solid #E5E5E5;
+        border-radius: 10px;
+        .product-image {
+            outline: 0px;
+        }
+        .sub-infos {
+            visibility: hidden;
+        }
+        .actions {
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.search-results-inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-left: $app-padding-left;
+    .search-results {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 14px;
+        grid-row-gap: 24px;
+        list-style-type: none;
+    
+        @media screen and (max-width: 1350px){
+            grid-template-columns: repeat(3, 1fr);
+        }
+    
+        @media screen and (max-width: 1050px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+    
+        @media screen and (max-width: 800px){
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+

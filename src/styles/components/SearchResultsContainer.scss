@@ -1,0 +1,28 @@
+.search-results-container {
+    padding-right: $app-padding-right;
+    padding-left: $app-padding-left;
+
+    .search-results-header {
+        display: flex;
+        align-items: center;
+        margin: 17px 0px;
+
+        p {
+            font-family: Roboto;
+            color: #B0B0B0;
+            font-size: 15px;
+            b {
+                font-weight: 500;
+                color: black;
+            }
+        }
+
+        .filter-dropwdown {
+            margin-left: auto;
+        }
+    }
+
+    .search-results-area {
+        display: flex;
+    }
+}

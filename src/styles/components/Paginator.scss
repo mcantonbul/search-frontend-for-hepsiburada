@@ -1,0 +1,20 @@
+.paginator-container {
+    display: flex;
+    gap: 15px;
+    > button {
+        width: 33px;
+        height: 33px;
+        background: #FFFFFF;
+        border: 1px solid #EEEEEE;
+        border-radius: 9px;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-family: Roboto;
+        font-size: 10px;
+        line-height: 20px;
+        &.active, &:hover {
+            background-color: $hepsiburada-main-color;
+            color: #FFFFFF;
+        }
+    }
+}
